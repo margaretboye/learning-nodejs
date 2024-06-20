@@ -14,7 +14,7 @@ const server = createServer(function (req, res) {
     }
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end('<h1>We hav</h1>');
-} else{
+} else {
     // delete file
     unlink('./hello.html', () => {
         console.log('File deleted');
